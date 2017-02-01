@@ -12,8 +12,18 @@ def stripvowel(phrase):
         else:
             new = new + i
     return new
-print(stripvowel('Computer Science Makes the World go round but it doesn\'t make the world round itself!'))
+novowels = stripvowel('Computer Science Makes the World go round but it doesn\'t make the world round itself!')
 
 
 
 """Write an encryption code that you make up and run it for the variable NoVowels"""
+def change(phrase):
+    enc = ''
+    for ch in phrase:
+        x = ord(ch)
+        x = x+4
+        if x > 127:
+            x = x-123
+        enc = enc + chr(x)
+    return enc
+print(change(novowels))
