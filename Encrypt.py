@@ -3,10 +3,16 @@
 'Computer Science Makes the World go round but it doesn't make the world round itself!'
 
 Print the save the result as the variable = NoVowels
-""""
-
-
-
+"""
+def stripvowel(phrase):
+    new = ''
+    for i in phrase:
+        if i == 'a' or i == 'A' or i == 'e' or i == 'E' or i == 'o' or i == 'O' or i == 'u' or i == 'U':
+            new = new
+        else:
+            new = new + i
+    return new
+print(stripvowel('Computer Science Makes the World go round but it doesn\'t make the world round itself!'))
 
 
 
