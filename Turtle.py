@@ -23,3 +23,7 @@ cube.forward(10)
 input()
 """Import and Call the DrawRectangle(Anyturtle, l, w) function from the
 file MyFile.py"""
+from MyFile import DrawRectangle
+apple = turtle.Turtle()
+DrawRectangle(apple, 10, 2)
+input()
